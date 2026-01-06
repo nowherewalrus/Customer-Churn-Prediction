@@ -54,9 +54,9 @@ pip install -r requirements.txt
 ## 📋 Project Structure
 
 ```
-customer-churn-prediction/
+Customer-Churn-Prediction/
 │
-├── churn_prediction.ipynb          # Main Jupyter notebook
+├── Churn.ipynb          # Main Jupyter notebook
 ├── ChurnData.csv                   # Dataset file
 ├── README.md                       # Project documentation
 ├── requirements.txt                # Python dependencies
@@ -79,8 +79,8 @@ customer-churn-prediction/
 
 ### 1. Clone and Setup
 ```bash
-git clone https://github.com/yourusername/customer-churn-prediction.git
-cd customer-churn-prediction
+git clone https://github.com/yourusername/Customer-Churn-Prediction.git
+cd Customer-Churn-Prediction
 ```
 
 ### 2. Run the Analysis
@@ -291,10 +291,6 @@ Contributions are welcome! Please follow these steps:
 4. Push to branch (`git push origin feature/improvement`)
 5. Create a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Dataset provided for educational purposes
@@ -305,9 +301,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, suggestions, or collaboration opportunities:
 
-- **GitHub Issues**: [Open an issue](https://github.com/yourusername/customer-churn-prediction/issues)
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
+
+- **Email**: pkhaghani916@gmail.com
+- **Project Link**: https://github.com/nowherewalrus/Customer-Churn-Prediction.git
 
 ---
 
