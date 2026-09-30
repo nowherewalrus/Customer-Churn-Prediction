@@ -60,7 +60,6 @@ Customer-Churn-Prediction/
 ├── ChurnData.csv                   # Dataset file
 ├── README.md                       # Project documentation
 ├── requirements.txt                # Python dependencies
-
 ```
 
 ## 💻 Usage
