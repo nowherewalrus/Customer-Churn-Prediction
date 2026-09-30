@@ -172,37 +172,7 @@ Confusion Matrix:
 - **True Negatives (Non-Churn)**: 28
 - **False Positives**: 4 (false alarms)
 - **Total Test Samples**: 40
-
-## 🎯 Business Impact Analysis
-
-### Current Model Performance:
-- **Correctly identifies**: 87.5% of all customers
-- **Churn detection rate**: 87.5% sensitivity
-- **False alarm rate**: 12.5% of non-churners flagged as churners
-
-### Cost Implications:
-Assuming:
-- Customer lifetime value = $1,000
-- Retention campaign cost = $50 per customer
-- Lost revenue per churned customer = $1,000
-
-**With 1,000 customers (20% churn rate = 200 churners):**
-- Model catches: 175 churners (87.5%)
-- Misses: 25 churners → $25,000 lost revenue
-- False alarms: 100 customers → $5,000 wasted retention spend
-- **Net benefit**: Prevent $170,000 churn vs. $5,000 cost
-
-## 📊 Visualizations
-
-### 1. Confusion Matrix
-![Confusion Matrix](results/confusion_matrix.png)
-
-### 2. Feature Importance
-![Feature Importance](results/feature_importance.png)
-
-### 3. Prediction Probabilities Distribution
-![Probabilities](results/prediction_probabilities.png)
-
+  
 ## 🛠️ Model Details
 
 ### Algorithm: Logistic Regression
@@ -221,46 +191,6 @@ Assuming:
 2. **Confusion Matrix**: TP, TN, FP, FN analysis
 3. **Classification Report**: Precision, Recall, F1-Score
 
-## 🔮 Future Improvements
-
-### 1. Model Enhancement
-```python
-# Try different models
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
-from xgboost import XGBClassifier
-
-# Hyperparameter tuning
-from sklearn.model_selection import GridSearchCV
-```
-
-### 2. Feature Engineering
-- Create interaction features
-- Add polynomial features
-- Include customer tenure groups
-
-### 3. Imbalance Handling
-```python
-# Address class imbalance
-from imblearn.over_sampling import SMOTE
-smote = SMOTE(random_state=42)
-x_resampled, y_resampled = smote.fit_resample(x_train, y_train)
-```
-
-### 4. Advanced Evaluation
-- ROC-AUC curve analysis
-- Precision-Recall curves
-- Cross-validation scores
-
-## 📝 Best Practices Implemented
-
-✅ **Feature Scaling**: StandardScaler for normalization  
-✅ **Train-Test Split**: Proper separation for unbiased evaluation  
-✅ **Regularization**: Prevents overfitting with C=0.01  
-✅ **Multiple Metrics**: Jaccard, confusion matrix, classification report  
-✅ **Visualization**: Clear interpretation through plots  
-✅ **Business Context**: Real-world impact analysis  
-
 ## 🚨 Limitations & Considerations
 
 1. **Small Dataset**: 200 samples may limit model generalization
@@ -268,16 +198,6 @@ x_resampled, y_resampled = smote.fit_resample(x_train, y_train)
 3. **Feature Selection**: Manual selection based on correlation
 4. **No Cross-Validation**: Single train-test split
 5. **Interpretability**: Logistic Regression coefficients need business context
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit changes (`git commit -am 'Add new feature'`)
-4. Push to branch (`git push origin feature/improvement`)
-5. Create a Pull Request
 
 ## 🙏 Acknowledgments
 
