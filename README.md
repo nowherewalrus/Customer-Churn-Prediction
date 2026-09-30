@@ -60,19 +60,7 @@ Customer-Churn-Prediction/
 ├── ChurnData.csv                   # Dataset file
 ├── README.md                       # Project documentation
 ├── requirements.txt                # Python dependencies
-│
-├── src/                            # Source code (optional)
-│   ├── data_preprocessing.py
-│   ├── model_training.py
-│   └── evaluation.py
-│
-├── results/                        # Generated outputs
-│   ├── confusion_matrix.png
-│   ├── feature_importance.png
-│   └── predictions.csv
-│
-└── docs/                           # Documentation
-    └── methodology.md
+
 ```
 
 ## 💻 Usage
